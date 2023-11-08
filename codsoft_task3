@@ -1,12 +1,10 @@
 import java.util.*;
-//User's bank account
 class UserBank{
     private double balance;
 
     public UserBank(double initial){
         this.balance=initial;
     }
-    //Withdraw
     public void withdraw(double amt){
         if(amt>balance){
             System.out.println("Insufficient balance.\nTransaction Failed");
@@ -18,7 +16,6 @@ class UserBank{
         }
     }
 
-    //Deposit
     public void deposit(double amt){
         if(amt!=0){
             balance +=amt;
